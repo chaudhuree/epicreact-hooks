@@ -103,7 +103,7 @@ import * as React from 'react'
 //               use local storage           //
 // function useLocalStorageState(key, defaultValue = '') {
 //   const [state, setState] = React.useState(
-//     () => window.localStorage.getItem(key) ?? defaultValue,
+//     () => window.localStorage.getItem(key) || defaultValue,
 //   )
 //
 //   React.useEffect(() => {
