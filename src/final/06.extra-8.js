@@ -1,7 +1,3 @@
-// useEffect: HTTP requests
-// 💯 use resetKeys
-// http://localhost:3000/isolated/final/06.extra-8.js
-
 import * as React from 'react'
 import {ErrorBoundary} from 'react-error-boundary'
 import {
@@ -51,7 +47,7 @@ function PokemonInfo({pokemonName}) {
 function ErrorFallback({error, resetErrorBoundary}) {
   return (
     <div role="alert">
-      There was an error:{' '}
+      There was an error:
       <pre style={{whiteSpace: 'normal'}}>{error.message}</pre>
       <button onClick={resetErrorBoundary}>Try again</button>
     </div>
