@@ -6,6 +6,7 @@ import VanillaTilt from 'vanilla-tilt'
 
 function Tilt({children}) {
   const tiltRef = React.useRef()
+  console.log(tiltRef)
 
   React.useEffect(() => {
     const {current: tiltNode} = tiltRef
