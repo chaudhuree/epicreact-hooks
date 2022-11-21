@@ -6,6 +6,9 @@ import {useState} from 'react'
 
 function Greeting({initialName=''}) {
   // 💣 delete this variable declaration and replace it with a React.useState call
+  const array=useState(initialName)
+  // const name=array[0]
+  // const setName=array[1]
   const [name, setName] = useState(initialName)
 
   function handleChange(event) {
